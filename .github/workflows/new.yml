@@ -1,5 +1,4 @@
 name: newone
-
 on:
   schedule:
     - cron: '1 * * * *'
@@ -17,4 +16,4 @@ jobs:
         env:
           USER_EMAIL: ${{ secrets.USER_EMAIL }}
           USER_PASSWORD: ${{ secrets.USER_PASSWORD}}
-          run: email.py
+          run: python email.py
